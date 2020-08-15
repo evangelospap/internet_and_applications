@@ -18,4 +18,18 @@
 ###### - Δημιουργούμε τη βάση δεδομένων γράφοντας «CREATE DATABASE internet_app; » και πατάμε enter
 ###### - Κάνουμε copy όλο το περιεχόμενο του αρχείου make_table_query.txt που βρίσκεται στο github και paste στο shell και δημιουργούμε το βασικό table της βάσης
 ###### - Κάνουμε copy όλο το περιεχόμενο του αρχείου load_data_query.txt και paste στο shell και φορτώνουμε τα δεδομένα στο table της βάσης. (Προσοχή πρέπει πρώτα να αλλάξουμε το path στην εντολή του αρχείου load_data_query.txt: LOAD DATA INFILE 'path\to\metadata.csv' στον κατάλογο που έχουμε κατεβάσει το metada.csv file του CORD19 dataset. Για παράδειγμα εμένα βρίσκεται στον κατάλογο 'D:\CORD19_DATASET\metadata.csv'
-###### - Κάνουμε import το project Cord19
+###### - Κάνουμε import το project Cord19 project ως εξής: Κατεβάζουμε τον φάκελο του project από το github, ανοίγουμε το Eclipse και πατώντας File->Open Projects from File System επιλέγουμε το φάκελο που κατεβάσαμε και πατάμε Finish. Κάνουμε δεξί κλικ στο Project και επιλέγουμε Properties->Project Facets->Runtimes και εκεί επιλέγουμε τη σωστή έκδοση του Tomcat που έχουμε εγκατεστημένο από το XAMPP ή όποια άλλη έχουμε και έπειτα πατάμε “Apply and Close”. 
+
+### Οδηγίες Εκτέλεσης :
+###### - Ώντας στο eclipse κάνουμε right-click στο imported project->settings->Java Build Path και 1) πατάμε add external jar και προσθέτουμε το mysql-connector-java-5.1.46-bin.jar στα Libraries. (Πρέπει να το κατεβάσουμε αν δεν το έχουμε) 2) ενημερώνουμε τις βιβλιοθήκες του Tomcat και του JRE στα version που είναι εγκατεστημένα στον υπολογιστή. Σε εμένα ήταν τα version Apache Tomcat v7.0 και JRE System Library [jdk1.8.0_191]
+###### - Κάνουμε right-click στο project του eclipse και πατάμε Run As-> Run on Server . Αν θέλουμε το run να γίνει σε άλλον browser εκτός του default του eclipse ώντας στο eclipse IDE πατάμε την επιλογή Window-> Web Browser->πχ. Firefox
+
+### Περιγραφή Λειτουργίας της εφαρμογής:
+###### Η πρώτη σελίδα που βλέπει ο χρήστης είναι η index.jsp, που θα τρέξει όταν γίνει run το project. Σε αυτή τη σελίδα μέσω ενός searchbar γράφει τα δύο φάρμακα από τα οποία επιθυμεί να βρει σχετικά άρθρα. Η δεύτερη σελίδα search_page.jsp  επικοινωνεί με τη βάση, παρουσιάζει τις πληροφορίες που συλλέχθηκαν  για τα δοθέντα φάρμακα και βρίσκει τους 5 ζητούμενουν συγγραφείς τους οποίους παρουσιάζει στην Τρίτη σελίδα authors_page.jsp μαζί με το ζητούμενο ιστόγραμμα
+
+### youtube video για περαιτέρω ανάλυση:
+###### --
+
+### Author
+###### Evangelos Papagiannopoulos
+
