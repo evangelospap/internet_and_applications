@@ -29,6 +29,7 @@
 
 ### Youtube Video playlist για περαιτέρω ανάλυση:
 ###### https://www.youtube.com/watch?v=YBWrKbR3yyU&list=PLFPmbXtIlq0gO_3yvOu6f8Bp0RXHxYYh_
+###### Είναι μια playlist από 3 βίντεο, αν δεν ανοίξει ως playlist μεταβείτε στο profile https://www.youtube.com/user/inccoruptible13/playlists
 
 ### Author
 ###### Evangelos Papagiannopoulos
